@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <abe-calcu></abe-calcu>
+</div> -->
+
+<body>
+
+    <header id="site-header">
+      <div class="container">
+  
+        <nav class="site-nav">
+            <div>
+              <a [routerLink]="['homepage']"> Home </a>
+              <a [routerLink]="['calcu']"> Calculator </a>
+            </div>
+        </nav>
+      </div>
+    </header>
+  
+    <div id="site-main" class="container">
+      <router-outlet></router-outlet>
+    </div>
+  
+    <footer id="site-footer">
+      <div class="container">
+        &copy; Jenny. Calculator 2018
+      </div>
+    </footer>
+  
+  </body>
